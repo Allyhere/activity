@@ -1,0 +1,37 @@
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  background-color: #fff;
+
+}
+
+.notification-content {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.notification-content a {
+  color: #268bd2;
+}
+
+.notification-content small{
+  color: #999999;
+  font-weight: bold;
+}
+
+.notification-actions {
+  justify-self: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification-actions a {
+  white-space: nowrap;
+}
+
+.notification-actions:hover {
+  opacity: 1;
+}
